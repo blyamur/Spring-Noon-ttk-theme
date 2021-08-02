@@ -27,6 +27,6 @@ widget.tk.call("set_theme", "light")
 - Когда вы меняете тему, размер окна меняется. Это довольно странная ошибка, которая распространяется на все темы ttk.
 
 ## Examples | Примеры
-Examples | Примеры: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples). 
+Examples | Примеры: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples).  [rdbende](https://github.com/rdbende/Sun-Valley-ttk-theme)
 
 
