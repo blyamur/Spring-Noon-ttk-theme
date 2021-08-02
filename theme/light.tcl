@@ -1,14 +1,13 @@
-# Copyright © 2021 rdbende <rdbende@gmail.com>
-
-# A stunning light theme for ttk based on Microsoft's Sun Valley visual style 
+# Copyright original theme © 2021 rdbende <rdbende@gmail.com>
+# Copyright © 2021 Mons <mons@mons.ws>
 
 package require Tk 8.6
 
-namespace eval ttk::theme::sun-valley-light {
+namespace eval ttk::theme::spring-noon-light {
     variable version 1.0
-    package provide ttk::theme::sun-valley-light $version
+    package provide ttk::theme::spring-noon-light $version
 
-    ttk::style theme create sun-valley-light -parent clam -settings {
+    ttk::style theme create spring-noon-light -parent clam -settings {
         proc load_images {imgdir} {
             variable images
             foreach file [glob -directory $imgdir *.png] {
@@ -21,7 +20,7 @@ namespace eval ttk::theme::sun-valley-light {
 
         array set colors {
             -fg             "#202020"
-            -bg             "#fafafa"
+            -bg             "#E7EBEC"
             -disabledfg     "#a0a0a0"
             -selectfg       "#ffffff"
             -selectbg       "#2f60d8"
