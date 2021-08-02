@@ -6,8 +6,6 @@
 
 <br>
 
-## Documentation
-For the documentation see the [documentation](DOCUMENTATION.pdf)!
 
 ## How to use?
 I wanted to make usage of the theme very simple, so the theme setting is handled by a separate tcl script.
@@ -61,6 +59,6 @@ root.mainloop()
 - When you change the theme, the window resizes. This is a quite strange bug that applies to all ttk themes. 
 
 ## Examples
-I made a separate repo for the examples: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples). 
+Examples: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples). 
 Be sure to **star** and **watch** it because I will make more examples, with awesome tips and tricks!!
 
