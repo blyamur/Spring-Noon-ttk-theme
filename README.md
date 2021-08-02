@@ -1,7 +1,7 @@
 # Spring-Noon-ttk-theme
 
 
-![Light screenshot](https://github.com/rdbende/Sun-Valley-ttk-theme/blob/master/Light%20screenshot.png)
+![Light screenshot](https://github.com/blyamur/Spring-Noon-ttk-theme/blob/master/Light%20screenshot.png)
 ###### Yup, this isn't Windows 11, this is KDE Plasma :)
 
 <br>
