@@ -1,64 +1,32 @@
-# Spring-Noon-ttk-theme
-
+# Spring-Noon-ttk-theme  | Spring-Noon ttk Тема
+ 
 
 ![Light screenshot](https://github.com/blyamur/Spring-Noon-ttk-theme/blob/master/Light%20screenshot.png)
-###### Yup, this isn't Windows 11, this is KDE Plasma :)
+###### Screenshot taken on windows 7 | Скриншот сделан на windows 7
 
-<br>
+## How to use? Как использовать
+Using a theme should be very simple, so customizing the theme is handled by a separate tcl script.
+This way, no matter what theme you want to use, you only need to import one file.
 
-
-## How to use?
-I wanted to make usage of the theme very simple, so the theme setting is handled by a separate tcl script.
-This way whether you want to use a dark or light theme, you need to import just a single file. The other thing
-that makes this a good solution is that normally switching between light and dark theme is not entirely perfect,
-and the colors are incorrect.
+Использование темы должно быть очень простым, поэтому настройка темы обрабатывается отдельным скриптом tcl.
+Таким образом, независимо от того,  какую тему вы хотите использовать, вам нужно импортировать только один файл. 
 
 ```python
-# Just simply import the spring-noon.tcl file
+# Just simply import the spring-noon.tcl file 
+# Просто импортируйте файл spring-noon.tcl
 widget.tk.call("source", "spring-noon.tcl")
 
 # Then set the theme you want with the set_theme procedure
+# Затем установите желаемую тему с помощью процедуры set_theme
 widget.tk.call("set_theme", "light") 
 ```
 
-### Changing themes
-Normally changing between themes isn't that easy, because then the colors aren't correct. See this [Stackoverflow question](https://stackoverflow.com/questions/66576662/how-to-switch-between-dark-and-light-ttk-theme). However, with my current solution, you can change theme at any time, without any color issues.
-
-```python
-import tkinter as tk
-from tkinter import ttk
-
-root = tk.Tk()
-
-# Pack a big frame so, it behaves like the window background
-big_frame = ttk.Frame(root)
-big_frame.pack(fill="both", expand=True)
-
-# Set the initial theme
-root.tk.call("source", "spring-noon.tcl")
-root.tk.call("set_theme", "light")
-
-def change_theme():
-    # NOTE: The theme's real name is sun-valley-<mode>
-    if root.tk.call("ttk::style", "theme", "use") == "spring-noon-dark":
-        # Set light theme
-        root.tk.call("set_theme", "light")
-    else:
-        # Set dark theme
-        root.tk.call("set_theme", "dark")
-
-# Remember, you have to use ttk widgets
-button = ttk.Button(big_frame, text="Change theme!", command=change_theme)
-button.pack()
-
-root.mainloop()
-```
-
-## Bugs
+## Bugs | Глюки
 - Tk isn't really good at displaying `png` images, so if your program is laggy with the theme, please check out the [gif-based branch!](https://github.com/rdbende/Sun-Valley-ttk-theme/tree/gif-based/)
 - When you change the theme, the window resizes. This is a quite strange bug that applies to all ttk themes. 
+- Когда вы меняете тему, размер окна меняется. Это довольно странная ошибка, которая распространяется на все темы ttk.
 
-## Examples
-Examples: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples). 
-Be sure to **star** and **watch** it because I will make more examples, with awesome tips and tricks!!
+## Examples | Примеры
+Examples | Примеры: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples). 
+
 
