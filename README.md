@@ -1,8 +1,7 @@
-# Sun-Valley-ttk-theme
-A stunning theme for ttk based on Microsoft's Sun Valley visual style
+# Spring-Noon-ttk-theme
+
 
 ![Light screenshot](https://github.com/rdbende/Sun-Valley-ttk-theme/blob/master/Light%20screenshot.png)
-![Dark screenshot](https://github.com/rdbende/Sun-Valley-ttk-theme/blob/master/Dark%20screenshot.png)
 ###### Yup, this isn't Windows 11, this is KDE Plasma :)
 
 <br>
@@ -17,13 +16,11 @@ that makes this a good solution is that normally switching between light and dar
 and the colors are incorrect.
 
 ```python
-# Just simply import the sun-valley.tcl file
-widget.tk.call("source", "sun-valley.tcl")
+# Just simply import the spring-noon.tcl file
+widget.tk.call("source", "spring-noon.tcl")
 
 # Then set the theme you want with the set_theme procedure
-widget.tk.call("set_theme", "light")
-# or
-widget.tk.call("set_theme", "dark")
+widget.tk.call("set_theme", "light") 
 ```
 
 ### Changing themes
@@ -40,12 +37,12 @@ big_frame = ttk.Frame(root)
 big_frame.pack(fill="both", expand=True)
 
 # Set the initial theme
-root.tk.call("source", "sun-valley.tcl")
+root.tk.call("source", "spring-noon.tcl")
 root.tk.call("set_theme", "light")
 
 def change_theme():
     # NOTE: The theme's real name is sun-valley-<mode>
-    if root.tk.call("ttk::style", "theme", "use") == "sun-valley-dark":
+    if root.tk.call("ttk::style", "theme", "use") == "spring-noon-dark":
         # Set light theme
         root.tk.call("set_theme", "light")
     else:
@@ -67,7 +64,3 @@ root.mainloop()
 I made a separate repo for the examples: [Sun-Valley-ttk-examples](https://github.com/rdbende/Sun-Valley-ttk-examples). 
 Be sure to **star** and **watch** it because I will make more examples, with awesome tips and tricks!!
 
-## What's next?
-Check out my other themes!
-- [Azure ttk theme](https://github.com/rdbende/Azure-ttk-theme)
-- [Forest ttk theme](https://github.com/rdbende/Forest-ttk-theme)
