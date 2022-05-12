@@ -1,6 +1,6 @@
 """
 Example script for testing the Sun Valley theme
-Author: Mons 
+
 License: GNU GPLv3 license
 Source: https://github.com/blyamur/Spring-Noon-ttk-theme/
 Based on https://github.com/rdbende/Sun-Valley-ttk-theme
